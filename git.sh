@@ -1,1 +1,1 @@
-
+git add . && git commit -m 'pushed through script' && git push
