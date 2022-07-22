@@ -1,4 +1,4 @@
-.dice{
+.dice {
     border: thin solid tomato;
     font-size: 1.8rem;
     font-weight: bold;
@@ -10,4 +10,12 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+@media only screen and (max-width: 420px) {
+    .dice {
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 1.4rem;
+    }
 }
