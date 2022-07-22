@@ -6,10 +6,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 7vw;
+    gap: 5vw;
     /* display: grid;
     grid-template: auto auto/repeat(5,1fr);
     gap: 25px; */
+    padding: 10px;
 }
 
 .btn {
@@ -21,14 +22,13 @@
     font-size: larger;
     font-weight: bold;
     border: thin solid tomato;
-    border-top: none;
     cursor: pointer;
     color: tomato;
 }
 
 @media only screen and (max-width: 420px) {
     .diceMain {
-        height: 80vh;
+        height: 85vh;
         width: 90vw;
         justify-content: space-evenly;
     }
