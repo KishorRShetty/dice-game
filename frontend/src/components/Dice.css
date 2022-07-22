@@ -1,11 +1,11 @@
 .dice{
     border: thin solid tomato;
-    padding: 1rem;
-    font-size: x-large;
+    font-size: 1.8rem;
     font-weight: bold;
     cursor: pointer;
-    height: 100px;
-    width: 100px;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;

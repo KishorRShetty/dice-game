@@ -17,7 +17,6 @@ body {
   padding: 20px;
   font-family: 'Karla', sans-serif;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* made it center vertically*/
