@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Dice from './components/Dice';
 
 function App() {
+
+  const [dice, setDice] = useState(allNewDice())
+
+  function generateNewDie() {
+    return Math.ceil(Math.random() * 6);
+  }
+
+  function allNewDice() {
+    const newDice = [];
+    for (let i = 1; i < 10; i++) {
+      newDice.push(generateNewDie());
+    }
+    return newDice;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="diceMain">
+      <Dice num="1" />
+      {dice.map(die => (
+        <Dice num={die} />
+      ))}
     </div>
   );
 }
